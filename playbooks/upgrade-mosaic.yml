@@ -1,0 +1,10 @@
+---
+- name: Create a file
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Create a file
+      copy:
+        dest: /Volumes/MiniDATA/Synced/Work/dlabs/infra/mosaic-validator-setup/test.txt
+        content: "This is an example file.\n"
+        mode: '0644'
