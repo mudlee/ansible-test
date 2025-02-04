@@ -1,7 +1,6 @@
 ---
 - name: Create a file
   hosts: localhost
-  become: yes
   tasks:
     - name: Create a file
       copy:
